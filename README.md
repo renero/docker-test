@@ -47,3 +47,5 @@ The contents of the `docker-compose.yml`:
             - ./models:/tester/models
 
 As seen, all contents from the root directory are copied inside the container image, BUT the directories `data` and `models` will be volumes mounted over the host filesystem, referencing therefore, the actual files in the host, not in the container.
+
+Now, you can change the contents of `data` or `models` from your computer (host) and everytime you fire up the container, those changes will be reflected in your execution. At the same time, changes in code, in you machine will never affect your docker, unless you rebuild the image.
