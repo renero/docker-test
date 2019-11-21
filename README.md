@@ -25,7 +25,7 @@ So, this is how our project structure looks:
       ├── pipeline.sh
       └── requirements.txt
 
-The image is built by calling:
+The image is built by calling (please, clone this repo, first!):
 
 `$ docker-compose build`
 
