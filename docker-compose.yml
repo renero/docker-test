@@ -1,0 +1,8 @@
+version: '3'
+services:
+  tester:
+    build: .
+    image: tester:0.1.0
+    volumes:
+        - ./data:/tester/data
+        - ./models:/tester/models
